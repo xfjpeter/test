@@ -1,0 +1,21 @@
+{
+  "name": "fsyzx/test",
+  "description": "this is test package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "xfjpeter",
+      "email": "fsyzxz@163.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "johnxu\\test\\": "src"
+    }
+  }
+}
