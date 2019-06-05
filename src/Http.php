@@ -8,8 +8,7 @@ class Http
 
     public static function instance()
     {
-        if (!self::$instance instanceof self)
-        {
+        if (!self::$instance instanceof self) {
             self::$instance = new self();
         }
 
@@ -19,5 +18,10 @@ class Http
     public function get(string $uri)
     {
         var_dump($uri);
+    }
+
+    public function post()
+    {
+        var_dump('http - post');
     }
 }
