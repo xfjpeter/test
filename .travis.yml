@@ -13,3 +13,7 @@ before_install:
     -in id_rsa_47.106.88.123.enc -out ~/.ssh/id_rsa_47.106.88.123 -d
 after_success:
   - ssh root@47.106.88.123 './travis_build'
+addons:
+  ssh_known_hosts:
+    - 222.211.206.112
+    - 192.168.0.8
