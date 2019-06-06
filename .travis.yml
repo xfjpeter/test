@@ -14,4 +14,4 @@ before_install:
 after_success:
   - ssh root@47.106.88.123 './travis_build'
 addons:
-  ssh_known_hosts: 192.168.0.8
+  ssh_known_hosts: 47.106.88.123
