@@ -1,4 +1,15 @@
 language: php
 php:
-  - 7.1.9
+- 7.1.9
 script: true
+notifications:
+  email:
+    recipients:
+    - fsyzxz@163.com
+    on_success: change
+    on_failure: always
+before_install:
+  - openssl aes-256-cbc -K $encrypted_29815ebf6ec4_key -iv $encrypted_29815ebf6ec4_iv
+    -in id_rsa_47.106.88.123.enc -out ~\/.ssh/id_rsa_47.106.88.123 -d
+after_success:
+  - ssh root@47.106.88.123 './travis_build'
