@@ -24,4 +24,9 @@ class Http
     {
         var_dump('http - post');
     }
+
+    public function delete()
+    {
+        var_dump('http - delete');
+    }
 }
