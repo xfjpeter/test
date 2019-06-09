@@ -34,4 +34,16 @@ class Http
     {
         var_dump('http - put');
     }
+    
+    public function test()
+    {
+        echo "hello world";
+        
+        print_r('hahahah');
+    }
+    
+    public function test1()
+    {
+        return "this method edit by xcode.";
+    }
 }
